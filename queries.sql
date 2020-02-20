@@ -58,16 +58,3 @@ join customer as c
 
 
 
-SELECT 
-    st.id as steps_ID,
-    st.step_number,
-    st.instructions,
-    s.id as scheme_ID,
-    s.scheme_name
-    
-
-FROM steps as st
-
-JOIN schemes as s
-    on st.scheme_id = s.id
-    

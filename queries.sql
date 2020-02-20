@@ -30,6 +30,7 @@ from orderdetail as od
     join product as p
 on od.productID = p.id
 where orderID = 10251
+ORDER BY p.productName
 
 
 -- Display the OrderID, 
@@ -45,4 +46,28 @@ join employee as e
     on o.employeeid = e.id
 join customer as c
     on o.customerID = c.id
- 
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT 
+    st.id as steps_ID,
+    st.step_number,
+    st.instructions,
+    s.id as scheme_ID,
+    s.scheme_name
+    
+
+FROM steps as st
+
+JOIN schemes as s
+    on st.scheme_id = s.id
+    

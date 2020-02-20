@@ -28,8 +28,7 @@ function findSteps(id){
     "steps.id",
     "schemes.scheme_name",
     "steps.step_number",
-
-    "steps.instructions",
+    "steps.instructions"
   )
   .where("scheme.id", id)
   .orderBy("steps.step_number")
